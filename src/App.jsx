@@ -4,7 +4,7 @@ import ColorPicker from './components/ColorPicker';
 import './App.css'
 
 function App() {
-    const [rgba, setRgba] = useState({ r: 255, g: 0, b: 0, a: 1 });
+    const [rgba, setRgba] = useState({ r: 255, g: 0, b: 0, a: 0.5 });
     const printRef = useRef();
 
     const handleColorChange = (color) => {
@@ -37,6 +37,10 @@ function App() {
 
     return (
         <div className='container'>
+            <div className='heading'>
+                <div className='title'>AnyColor</div>
+                <div className='subtitle'>Download any color png with the opacity that you want</div>
+            </div>
             <div className='image-container'>
                 <div
                     ref={printRef}
@@ -55,11 +59,11 @@ function App() {
                 onChange={handleColorChange}
             />
 
-            <button
+            <div
                 className='download-button'
                 onClick={handleDownload}>
                 Download
-            </button>
+            </div>
         </div>
     )
 }

@@ -1,19 +1,46 @@
 .container {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 95vh;
-    overflow: hidden
+    overflow: hidden;
+    gap: 1rem;
+    background-color: #FFFBF1;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #E36A6A;
+}
+
+.subtitle {
+    font-size: .7rem;
+    width: 10rem;
+    color: #FFB2B2;
 }
 
 .image-container {
     position: relative;
-    width: 65%;
-    height: 30%;
+    width: 50%;
+    height: 25%;
+    background-color: #FFB2B2;
+    border-radius: .5rem;
+    border: 1rem solid #FFF2D0;
 }
 
 .transparent-layer {
+    border-radius: .5rem;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,8 +49,28 @@
 }
 
 .image-container img {
+    border-radius: .5rem;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.download-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: .5rem;
+    background-color: #FF7F7F;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #FF4C4C;
+}
+
+@media (min-width: 600px) {
+    
 }

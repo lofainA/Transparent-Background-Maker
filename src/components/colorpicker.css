@@ -1,0 +1,41 @@
+.color-picker-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px; 
+    padding: 1rem; 
+    border-radius: .5rem; 
+    background: #FFF2D0; 
+    font-family: Bahnschrift, sans-serif;
+}
+
+.saturation {
+    border-radius: 12px;
+    position: relative; 
+    height: 9rem;
+}
+
+.hue {
+    position: relative; 
+    height: 1rem; 
+    margin-top: .4rem;
+}
+
+.alpha {
+    position: relative; 
+    height: 1rem; 
+    margin-top: .4rem;
+}
+
+.hex {
+    align-self: center;
+    margin-top: 10px;
+}
+
+.hex input {
+    width: 100px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
